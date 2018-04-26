@@ -8,12 +8,15 @@ class BarCodeScannerScreen extends Component {
             showScanner: true
         }
     };
-
-  state = {
-    hasCameraPermission: null,
-    emps: null,
-    showScanner: true
-  };
+    
+  constructor(props) {
+    super(props)
+    this.state = {
+      hasCameraPermission: null,
+      emps: null,
+      showScanner: true
+    }
+  }
 
   async getKey() {
     try {
